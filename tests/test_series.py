@@ -17,11 +17,16 @@ def test_lucTest():
     assert actual == value
 
 def test_sumFibTest():
-    actual = sum_series(9)
-    value = 21
+    actual = sum_series(1)
+    value = 0
     assert actual == value
 
 def test_sumLucTest():
-    actual = sum_series(9, 2, 1)
-    value = 76
+    actual = sum_series(6, 2, 1)
+    value = 11
     assert actual == value
+
+# def test_sum_series_with_optional_arguments_for_lucas_at_3():
+#     actual = sum_series(3, 2, 1)
+#     value = 3
+#     assert actual == value

@@ -1,4 +1,4 @@
-num = 9
+# num = 9
 
 def fibonacci(n):
     if n<=0:
@@ -41,9 +41,9 @@ def sum_series(i, x=0, y=1):
         return y
       return sum_series(i - 1, x, y) + sum_series(i - 2, x, y)
     else:
-      if i == 0:
-        return x
       if i == 1:
+        return x
+      if i == 2:
         return y
       return sum_series(i - 1, x, y) + sum_series(i - 2, x, y)
 
